@@ -1,1 +1,1 @@
-this is my variables readme
+this is my variable readme
