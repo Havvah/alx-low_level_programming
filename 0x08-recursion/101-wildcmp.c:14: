@@ -1,0 +1,3 @@
+ldcmpldcmp.c:15: WARNING: space prohibited between function name and open parenthesis '('
+101-wildcmp.c:15: ERROR: trailing statements should be on next line.c:15: WARNING: space prohibited between function name and open parenthesis '('
+101-wildcmp.c:15: ERROR: trailing statements should be on next line
