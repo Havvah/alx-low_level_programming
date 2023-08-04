@@ -1,0 +1,2 @@
+rgs.c:12: WARNING: braces {} are not necessary for single statement blocks
+2-args.c:15: ERROR: trailing whitespace
