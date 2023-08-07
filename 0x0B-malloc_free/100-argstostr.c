@@ -4,7 +4,7 @@
  * argstostr - convert the parameter passed to the program to string
  * @ac: the argument count
  * @av: the argument vector
- * Return: ...
+ * Return: Pointer to a new string containing concatenated arguments
  */
 
 char *argstostr(int ac, char **av)
@@ -15,37 +15,28 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	while (i < ac)
+	for (i = 0; i < ac; i++)
 	{
-		while (av[i][j])
+		for (j = 0; av[i][j]; j++)
 		{
 			ch++;
-			j++;
 		}
-
-		j = 0;
-		i++;
 	}
+	s = malloc(sizeof(char) * (ch + 1));
 
-	s = malloc((sizeof(char) * ch) + ac + 1);
+	if (s == NULL)
+		return (NULL);
 
-	i = 0;
-	while (av[i][j])
+	for (i = 0; i < ac; i++)
 	{
-		while (av[i][j])
+		for (j = 0; av[i][j]; j++)
 		{
 			s[k] = av[i][j];
 			k++;
-			j++;
 		}
-
 		s[k] = '\n';
-
-		j = 0;
 		k++;
-		i++;
 	}
-	k++;
 	s[k] = '\0';
 	return (s);
 }
