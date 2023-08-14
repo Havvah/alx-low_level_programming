@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	printf("This program was compiled from the file: %s\n", __FILE__);
+	printf("%s", __FILE__);
 	return (0);
 }
 
