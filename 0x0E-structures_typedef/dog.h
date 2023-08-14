@@ -6,9 +6,6 @@
  * @name: Pointer to the name of the dog
  * @age: Age of the dog
  * @owner: Pointer to the owner's name
- *
- * Description: This structure defines the basic information about a dog,
- * including its name, age, and owner's name.
  */
 struct dog
 {
@@ -16,6 +13,6 @@ struct dog
 	float age;
 	char *owner;
 };
-void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
 
