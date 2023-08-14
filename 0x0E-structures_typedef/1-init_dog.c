@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdio.h>
-
 /**
  * init_gog - initialize a dog
  * @d: pointer to dog
