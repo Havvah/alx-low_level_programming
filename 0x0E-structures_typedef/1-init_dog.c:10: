@@ -1,0 +1,4 @@
+nit_dog.c:15: warning: Excess struct/union/enum/typedef member 'name' description in 'dog'
+1-init_dog.c:15: warning: Excess struct/union/enum/typedef member 'age' description in 'dog'
+struct dog
+init_dog
